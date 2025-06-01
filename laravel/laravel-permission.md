@@ -6,7 +6,6 @@ This guide explains how to setup the correct permissions for a new laravel app s
 
 ## ✅ Prerequisites
 
-- 
 
 ---
 

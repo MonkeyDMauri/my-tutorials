@@ -16,7 +16,7 @@ This guide explains how to mount and install Guest Additions on an Ubuntu VM whe
 
 Open a terminal in the Ubuntu VM and run:
 
-```bash
+```bash`
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential dkms linux-headers-$(uname -r)
 
@@ -33,22 +33,22 @@ If prompted to download the ISO, accept it.
 
 First check if it was auto-mounted by opening your terminal and doing:
 
-```bash
+```bash`
 ls /media/$USER
 
 You should see a folder like this:
 
-```bash
+```bash`
 VBox_GAs_7.1.4
 
 If it doesn't exist, mount it manually:
 
-```bash
+```bash`
 sudo mount /dev/cdrom /mnt
 
 If this doesn't work you might wanna try mounting the ISO from sr* or sr0:
 
-```bash
+```bash`
 sudo mount /dev/sr* /mnt
 cd /mnt
 ls
@@ -58,13 +58,13 @@ ls
 Our current working directory should be where we can see VBoxLinuxAdditions.run which should be in /mnt,
 once this is done we run the installer.
 
-```bash
+```bash`
 sudo ./VBoxLinuxAdditions.run
 
 
 ## 🔁 5. Reboot the VM
 
-```bash
+```bash`
 sudo reboot
 
 
